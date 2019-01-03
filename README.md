@@ -18,5 +18,5 @@ A Spring boot application to convert GeoTiff single channel images to RGB image.
 
 ## Running the application:
 1. Provide the directory of Granules data in application.properties for property single.channel.file.directory. Make sure it is prefixed with “file:”. E.g. single.channel.file.directory=file:../sample-granule/ 
-1. ./mvnw spring-boot:run
+1. mvn spring-boot:run
 1. curl -XPOST -H "Content-Type: application/json" --data '{"utmZone": 33, "latitudeBand": "U", "gridSquare": "UP", "date":"2018-08-04", "channelMap": "visible"}' http://localhost:8081/generate-images >> ./generated.jpg
